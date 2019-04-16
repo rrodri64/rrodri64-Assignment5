@@ -4,6 +4,6 @@ public class Sport implements Car {
 
     @Override
     public void construct() {
-        System.out.println("Constructing a sports car");
+        System.out.println("Inside Sport::construct() method.");
     }
 }
