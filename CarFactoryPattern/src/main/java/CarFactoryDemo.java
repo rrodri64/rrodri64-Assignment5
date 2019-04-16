@@ -1,9 +1,16 @@
 package main.java;
 
 public class CarFactoryDemo {
-    public static void main(String args[]) {
+    
+    /**
+     * @summary This main method inputs sample cars to build
+     * @param args - Main method
+     */
+    
+    public static void main(String[] args) {
+
         CarFactory carFactory = new CarFactory();
-        
+
         Car car1 = carFactory.getCar("SPORT");
         car1.construct();
         car1 = carFactory.getPart("SPORTPART");
