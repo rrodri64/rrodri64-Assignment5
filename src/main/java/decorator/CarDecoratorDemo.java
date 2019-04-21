@@ -1,20 +1,20 @@
-package decorator;
+package main.java.decorator;
 
 public class CarDecoratorDemo {
 
     public static void main(String[] args) {
         
-        Car sport1 = new Sport(new BaseCar());
+        DCar sport1 = new DSport(new BaseCar());
         sport1.assembleCar();
         
         System.out.println("----------\n");
         
-        Car hybrid1 = new Hybrid(new BaseCar());
+        DCar hybrid1 = new DHybrid(new BaseCar());
         hybrid1.assembleCar();
         
         System.out.println("----------\n");
         
-        Car truck1 = new Truck(new BaseCar());
+        DCar truck1 = new DTruck(new BaseCar());
         truck1.assembleCar();
     }
 

@@ -1,4 +1,4 @@
-package main.java;
+package main.java.factory;
 
 public class SportPart implements Car {
 

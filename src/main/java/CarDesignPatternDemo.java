@@ -1,6 +1,14 @@
 package main.java;
 
-public class CarFactoryDemo {
+import main.java.decorator.BaseCar;
+import main.java.decorator.DCar;
+import main.java.decorator.DHybrid;
+import main.java.decorator.DSport;
+import main.java.decorator.DTruck;
+import main.java.factory.Car;
+import main.java.factory.CarFactory;
+
+public class CarDesignPatternDemo {
     
     /**
      * @summary This main method inputs sample cars to build
@@ -23,5 +31,18 @@ public class CarFactoryDemo {
         car3.construct();
         car3 = carFactory.getPart("TRUCKPART");
         car3.construct();
+        
+        DCar sport1 = new DSport(new BaseCar());
+        sport1.assembleCar();
+        
+        System.out.println("----------\n");
+        
+        DCar hybrid1 = new DHybrid(new BaseCar());
+        hybrid1.assembleCar();
+        
+        System.out.println("----------\n");
+        
+        DCar truck1 = new DTruck(new BaseCar());
+        truck1.assembleCar();
     }
 }

@@ -1,7 +1,7 @@
-package decorator;
+package main.java.decorator;
 
-public class Truck extends CarDecorator {
-    public Truck(Car c) {
+public class DTruck extends CarDecorator {
+    public DTruck(DCar c) {
         super(c);
     }
     

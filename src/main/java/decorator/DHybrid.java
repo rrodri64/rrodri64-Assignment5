@@ -1,7 +1,7 @@
-package decorator;
+package main.java.decorator;
 
-public class Hybrid extends CarDecorator {
-    public Hybrid(Car c) {
+public class DHybrid extends CarDecorator {
+    public DHybrid(DCar c) {
         super(c);
     }
     
