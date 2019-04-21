@@ -4,7 +4,7 @@ public class HybridPart implements Car {
 
     @Override
     public void construct() {
-        System.out.println("Adding hybrid car part");
+        System.out.println("Added Hybrid Part: Electric Motor");
     }
 
 }

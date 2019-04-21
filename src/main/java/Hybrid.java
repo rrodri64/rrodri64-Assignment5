@@ -4,7 +4,7 @@ public class Hybrid implements Car {
 
     @Override
     public void construct() {
-        System.out.println("Inside Hybrid::construct() method.");
+        System.out.println("Created New Vehicle: Hybrid");
     }
 
 }
