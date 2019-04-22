@@ -1,5 +1,26 @@
-# Ignore Gradle project-specific cache directory
-.gradle
+# Compiled class file
+*.class
 
-# Ignore Gradle build output directory
-build
+# Log file
+*.log
+
+### Eclipse ###
+
+### Eclipse Patch ###
+# Eclipse Core		
+.project
+
+# JDT-specific (Eclipse Java Development Tools)		
+.classpath
+
+### Gradle ###
+.gradle
+/build/
+
+# Mac DS file
+.DS_Store
+
+
+/classes/
+/bin/
+/doc/
