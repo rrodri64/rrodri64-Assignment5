@@ -1,11 +1,15 @@
 package test.java;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import main.java.builder.*;
+import main.java.builder.BHybrid;
+import main.java.builder.BSport;
+import main.java.builder.BTruck;
+import main.java.builder.BuilderFactory;
+import main.java.builder.SpecificBuilder;
 
 public class BuilderPatternTest {
 

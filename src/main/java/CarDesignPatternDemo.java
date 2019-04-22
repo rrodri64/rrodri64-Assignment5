@@ -1,11 +1,11 @@
 package main.java;
 
-import main.java.builder.CarPlanBuilder;
-import main.java.builder.SpecificBuilder;
-import main.java.builder.BuilderFactory;
 import main.java.builder.BHybrid;
 import main.java.builder.BSport;
 import main.java.builder.BTruck;
+import main.java.builder.BuilderFactory;
+import main.java.builder.CarPlanBuilder;
+import main.java.builder.SpecificBuilder;
 
 import main.java.decorator.BaseCar;
 import main.java.decorator.DCar;
@@ -59,6 +59,7 @@ public class CarDesignPatternDemo {
         SpecificBuilder sportBuilder = new BSport();
         SpecificBuilder hybridBuilder = new BHybrid();
         SpecificBuilder truckBuilder = new BTruck();
+        
         BuilderFactory factory1 = new BuilderFactory(sportBuilder);
         BuilderFactory factory2 = new BuilderFactory(hybridBuilder);
         BuilderFactory factory3 = new BuilderFactory(truckBuilder);
@@ -67,13 +68,13 @@ public class CarDesignPatternDemo {
         factory2.constructCar();
         factory3.constructCar();
         
-        CarPlanBuilder bCar1 = factory1.getCar();
-        CarPlanBuilder bCar2 = factory2.getCar();
-        CarPlanBuilder bCar3 = factory3.getCar();
+        CarPlanBuilder builtcar1 = factory1.getCar();
+        CarPlanBuilder builtcar2 = factory2.getCar();
+        CarPlanBuilder builtcar3 = factory3.getCar();
         
-        System.out.println("Builder constructed hybrid car: " + bCar1);
-        System.out.println("\nBuilder constructed sport car: " + bCar2);
-        System.out.println("\nBuilder constructed truck car: " + bCar3);
+        System.out.println("Builder constructed hybrid car: " + builtcar1);
+        System.out.println("\nBuilder constructed sport car: " + builtcar2);
+        System.out.println("\nBuilder constructed truck car: " + builtcar3);
         
     }
 }
