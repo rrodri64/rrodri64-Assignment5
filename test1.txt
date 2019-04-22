@@ -1,5 +1,0 @@
-Travis CI Attempts:
-2
-
-Travis CI Part B Attempts:
-1
