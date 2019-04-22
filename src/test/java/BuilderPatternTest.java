@@ -60,7 +60,7 @@ public class BuilderPatternTest {
         assertNotNull(factory.getCar());
         assertNotNull(factory1.getCar());
         assertNotNull(factory2.getCar());
-
+ 
     }
     
 }
