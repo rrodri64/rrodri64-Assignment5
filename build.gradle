@@ -12,7 +12,12 @@ plugins {
 
     // Apply the application plugin to add support for building an application
     id 'application'
+    
+    id "com.github.spotbugs" version "1.6.11"
 }
+
+apply plugin: 'application'
+apply plugin: 'jacoco'
 
 repositories {
     // Use jcenter for resolving your dependencies.
@@ -30,3 +35,40 @@ dependencies {
 
 // Define the main class for the application
 mainClassName = 'main.java.CarDesignPatternDemo'
+
+///////////////////////////////////////////////////////////////////////////
+// Configure Checkstyle
+///////////////////////////////////////////////////////////////////////////
+ apply plugin: 'checkstyle'
+ checkstyle {
+   // Keep checkstyle a little quieter
+   ignoreFailures = true
+   showViolations = false
+ }
+
+ tasks.withType(Checkstyle) {
+   reports {
+     html.enabled = true
+     xml.enabled = false
+   }
+ }
+ checkstyle {
+     toolVersion = "8.8"
+ }
+
+
+///////////////////////////////////////////////////////////////////////////
+// Configure SpotBugs
+///////////////////////////////////////////////////////////////////////////
+
+ spotbugs {
+   toolVersion = '3.1.12'
+ }
+
+// // To generate an HTML report instead of XML
+ tasks.withType(com.github.spotbugs.SpotBugsTask) {
+   reports {
+     xml.enabled = false
+     html.enabled = true
+   }
+ }

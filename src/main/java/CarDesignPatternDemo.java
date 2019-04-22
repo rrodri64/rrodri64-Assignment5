@@ -18,6 +18,8 @@ public class CarDesignPatternDemo {
     public static void main(String[] args) {
 
         CarFactory carFactory = new CarFactory();
+        
+        System.out.println("\n---*Factory Design Pattern*---\n");
 
         Car car1 = carFactory.getCar("SPORT");
         car1.construct();
@@ -32,15 +34,14 @@ public class CarDesignPatternDemo {
         car3 = carFactory.getPart("TRUCKPART");
         car3.construct();
         
+        System.out.println("\n---*Decorator Design Pattern*---\n");
+        
         DCar sport1 = new DSport(new BaseCar());
         sport1.assembleCar();
         
-        System.out.println("----------\n");
         
         DCar hybrid1 = new DHybrid(new BaseCar());
         hybrid1.assembleCar();
-        
-        System.out.println("----------\n");
         
         DCar truck1 = new DTruck(new BaseCar());
         truck1.assembleCar();

@@ -5,7 +5,14 @@ import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertNull;
 
-import main.java.factory.*;
+import main.java.factory.Car;
+import main.java.factory.CarFactory;
+import main.java.factory.Hybrid;
+import main.java.factory.HybridPart;
+import main.java.factory.Sport;
+import main.java.factory.SportPart;
+import main.java.factory.Truck;
+import main.java.factory.TruckPart;
 
 import org.junit.Test;
 
