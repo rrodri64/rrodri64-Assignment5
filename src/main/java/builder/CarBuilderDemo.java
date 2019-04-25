@@ -1,6 +1,9 @@
 package main.java.builder;
 
 public class CarBuilderDemo {
+    /**
+     * @param args Main method default argument
+     */
     public static void main(String[] args) {
         SpecificBuilder hybridBuilder = new BHybrid();
         SpecificBuilder sportBuilder = new BSport();

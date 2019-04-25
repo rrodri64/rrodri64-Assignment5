@@ -2,6 +2,9 @@ package main.java.decorator;
 
 public class CarDecoratorDemo {
 
+    /**
+     * @param args Main method default argument
+     */
     public static void main(String[] args) {
         
         DCar sport1 = new DSport(new BaseCar());

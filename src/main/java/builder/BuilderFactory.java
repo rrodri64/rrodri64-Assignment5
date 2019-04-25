@@ -12,6 +12,10 @@ public class BuilderFactory {
         return this.carBuilder.getCar();
     }
 
+    /**
+     * Method to create each type of car and part. 
+     */
+    
     public void constructCar() {
         this.carBuilder.buildCarType();
         this.carBuilder.buildCarPart();
